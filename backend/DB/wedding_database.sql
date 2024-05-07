@@ -21,11 +21,8 @@ CREATE TABLE `person`(
 
 DROP TABLE IF EXISTS `dishes`;
 CREATE TABLE `dishes`(
-  pk INT NOT NULL AUTO_INCREMENT,
-  id UUID NOT NULL,
-  `lunch` VARCHAR(200),
-  PRIMARY KEY(pk),
-  UNIQUE(id)
+  id VARCHAR(200) PRIMARY KEY,
+  `lunch` VARCHAR(200)
 );
 
 INSERT INTO person (personName, surname, dob, email, age, hobbies, hairColor, height, favColor, sentFirstMessage, isAllCorrect) VALUES (
