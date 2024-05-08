@@ -13,7 +13,7 @@
         justify-content: center;
         align-items: center;
     }
-    input[type=text] {
+    input[type=password] {
         width: 15vw;
         height: auto;
         font-size: 2vw;
@@ -64,7 +64,7 @@
         <p style="font-size: 1vw; font-family: inherit;">
             Heslo je text hneď nad dátumom svadby <br> na pozvánke (spolu bez medzier)
         </p>
-        <input type="text" name="pass"><br>
+        <input type="password" name="pass"><br>
         <button type="submit" class="submit-button">Potvrdiť</button>
     </form>
 </div>
