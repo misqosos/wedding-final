@@ -23,7 +23,7 @@
         public function __construct() {}
 
         function postPerson($person){
-            $sql = 'INSERT INTO wedding.person (
+            $sql = 'INSERT INTO d29120_wedding.person (
                 personName,
                 surname, 
                 dob, 
@@ -102,7 +102,7 @@
         } 
 
         function getCorrectPerson($name){
-            $sql = 'SELECT * FROM wedding.person WHERE personName = :personName AND isAllCorrect = 1 ORDER BY id ASC LIMIT 1';
+            $sql = 'SELECT * FROM d29120_wedding.person WHERE personName = :personName AND isAllCorrect = 1 ORDER BY id ASC LIMIT 1';
             
             $stmt = DbConnection::getDatabaseConnection()->prepare($sql);
 
@@ -116,7 +116,7 @@
         }
 
         function getPostedRecord($name){
-            $sql = 'SELECT * FROM wedding.person WHERE personName = :personName ORDER BY id DESC LIMIT 1';
+            $sql = 'SELECT * FROM d29120_wedding.person WHERE personName = :personName ORDER BY id DESC LIMIT 1';
             
             $stmt = DbConnection::getDatabaseConnection()->prepare($sql);
 
