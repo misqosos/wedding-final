@@ -1,7 +1,7 @@
 
 <div class="main-view">
     
-    <img src="assets/images/spolu1.jpg" alt="spolu" class="image-together image-left">
+    <img src="assets/images/spolu1.JPG" alt="spolu" class="image-together image-left">
     <img src="assets/images/spolu2.jpg" alt="spolu" class="image-together image-right">
 
     <div class="main-title">Náš príbeh</div>
