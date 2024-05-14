@@ -1,6 +1,6 @@
 <?php
 $uploadOk = 1;
-$target_dir = "../fotky/";
+$target_dir = "../../fotky/";
 
 for ($i=0; $i < count($_FILES["filesToUpload"]["name"]); $i++) { 
 
