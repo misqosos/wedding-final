@@ -16,3 +16,9 @@
 <?php
     include("names-header/names-header.component.php");
 ?>
+
+<form action="uploads/photos.php" method="post" enctype="multipart/form-data" style="top: 10vw; left: 20vw; position: relative; border-style: dashed;">
+  Select image to upload:
+  <input type="file" name="filesToUpload[]" id="fileToUpload" multiple="multiple">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
