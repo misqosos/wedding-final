@@ -51,12 +51,12 @@
                 if (move_uploaded_file($_FILES["filesToUpload"]["tmp_name"][$i], $target_file)) {
                     array_push($successes, $target_file);
                 } else {
-                    echo "Failed";
+                    echo "Súbor $target_file sa neuložil"."<br>";
                 }
             }
             if (count($successes) == count($_FILES["filesToUpload"]["name"])) {
                 echo "Uložené";
-            } else { echo "Niektorý zo súborov sa neuložil"; }
+            } else { echo "Niektoré zo súborov sa neuložili"; }
         }
     }
 ?>
