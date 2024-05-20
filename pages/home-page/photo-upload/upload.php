@@ -7,5 +7,5 @@
 <?php
     $actionPath = "/home";
     $targetDirPath = "../fotky/";
-    include("upload-wo-css.php");
+    //include("upload-wo-css.php");
 ?>
