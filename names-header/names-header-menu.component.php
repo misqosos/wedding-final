@@ -6,11 +6,11 @@
             <a href="<?php echo $homePath ?>">Domov</a>
         &nbsp;&#9825;</label>
     </li>
-    <li>
+    <!-- <li>
         <label class="option-decor">&#9825;&nbsp;
-            <a href="<?php echo $uploadsPath ?>">Vaše nahrané fotky</a>
+            <a href="<?php //echo $uploadsPath ?>">Vaše nahrané fotky</a>
         &nbsp;&#9825;</label>
-    </li>
+    </li> -->
     <li>
         <label class="option-decor">&#9825;&nbsp;
             <a href="<?php echo $ourStoryPath ?>">Náš príbeh</a>
