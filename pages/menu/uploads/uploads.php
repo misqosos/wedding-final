@@ -4,6 +4,8 @@
 </style>
 
 <?php 
+    $copyFromDirectory = "../fotky/";
+    $showFromDirectory = "photos/";
     include("uploads-wo-css.php");
     include("components/home-button.html"); 
 ?>

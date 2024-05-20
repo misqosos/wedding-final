@@ -6,10 +6,20 @@
     </div>
 
     <?php
-        $dir_name = "pages/home-page/photo-upload/photos/";
-        $images = glob($dir_name."*");
+        //delete inapp files 
+        $images = glob($showFromDirectory."*");
+        array_map('unlink', $images);
+
+        //fetch from outer folder
+        $images = glob($copyFromDirectory."*");
+
+        foreach( $images as $image ) {
+            copy($image, $showFromDirectory . basename($image));
+        }
+
+        $images = glob($showFromDirectory."*");
     ?>
-    
+
     <?php if (empty($images)) : ?>
         <div style="text-align: center;">
             Žiadne fotky
