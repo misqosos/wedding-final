@@ -23,15 +23,7 @@
         function iterateImages ($image) {
             $videoExts = array("mov", "mp4", "avi", "wmv", "avchd", "webm", "flv", "3gp");
             if( in_array(strtolower(pathinfo($image, PATHINFO_EXTENSION)), $videoExts) ) {
-        
-                $ffmpeg = FFMpeg\FFMpeg::create();
-        
-                $video = $ffmpeg->open($image);
-                $format = new FFMpeg\Format\Video\X264();
-                $format->setAudioCodec("libmp3lame");
-              
-                $video->save($format, $showFromDirectory);
-                echo '<video controls> <source src="'.$video.'" type="video/mp4"> </video>';
+                echo '<video controls> <source src="'.$image.'" type="video/mp4"> </video>';
             } else {
                 echo '<img src="'.$image.'" alt="photo" onclick="openImage(this);">';
             }
