@@ -28,10 +28,10 @@
         function iterateImages ($image) {
             $videoExts = array("mov", "mp4", "avi", "wmv", "avchd", "webm", "flv", "3gp");
             if( in_array(strtolower(pathinfo($image, PATHINFO_EXTENSION)), $videoExts) ) {
-                replace_extension($image, "mp4");
-                echo '<video controls> <source src="'.$image.'" type="video/mp4"> </video>';
+                $convertedImage = replace_extension($image, "mp4");
+                echo '<video controls> <source src="'.$convertedImage.'" type="video/mp4"> </video>';
             } else {
-                echo '<img src="'.$image.'" alt="photo" onclick="openImage(this);">';
+                echo '<img src="'.$convertedImage.'" alt="photo" onclick="openImage(this);">';
             }
         }
     ?>
