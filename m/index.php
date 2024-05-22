@@ -1,4 +1,6 @@
 <?php
+  $GLOBALS["man"] = "woody";
+  $GLOBALS["woman"] = "jessie";
   include("../backend/database.class.php");
 ?>
 <?php
@@ -71,7 +73,7 @@ include("../access/access.php");
   <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><?php if($access) { echo "Stakčínska svadbička"; } else { echo "Ahoj"; } ?></title>
+    <title><?php if($access) { echo "Wooding"; } else { echo "Gate"; } ?></title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="heart.ico">
