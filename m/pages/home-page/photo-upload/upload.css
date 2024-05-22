@@ -1,9 +1,9 @@
 
 .frame-upload {
-    font-family: 'Lobster';
+    font-family: var(--fontFamily);
     -webkit-text-stroke-color: black;
     position: fixed;
-    top: 10vh; 
+    top: 13vh; 
     left: 0;
     right: 0;
     box-sizing: border-box;
@@ -42,7 +42,8 @@
 
   .upload-image-info {
     text-align: center;
-    font-size: 1.5vh;
+    font-size: 4vh;
+    margin-bottom: -1.5vh;
   }
 
 .upload-button {
@@ -51,15 +52,13 @@
   border-style: solid;
   color: white;
   cursor: pointer;
-  font-family: 'Lobster';
-  font-size: 2.5vh;
+  font-family: var(--fontFamily);
+  font-size: 4vh;
   height: auto;
   padding: 2vh;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
   margin-top: 0;
 }
 

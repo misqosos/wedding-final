@@ -6,20 +6,20 @@
         left: 0; 
         width: 100%; 
         height: 100%;
-        border: 1vw solid olive; 
+        border: 1vh solid olive; 
         box-sizing: border-box;
         background-color: whitesmoke;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    input[type=password] {
-        width: 15vw;
+    input[type=text] {
+        width: 20vh;
         height: auto;
-        font-size: 2vw;
-        border-radius: 1vw;
+        font-size: 3vh;
+        border-radius: 1vh;
         padding: 0.5vh 1vw;
-        font-family: 'Lobster';
+        font-family: var(--fontFamily);
         -webkit-text-stroke-width: 0.5px;
         -webkit-text-stroke-color: black;
         text-align: center;
@@ -30,10 +30,10 @@
         border-style: solid;
         color: white;
         cursor: pointer;
-        font-family: 'Lobster';
-        font-size: 2.5vw;
+        font-family: var(--fontFamily);
+        font-size: 4vh;
         height: auto;
-        padding: 1vw;
+        padding: 1vh;
         text-align: center;
         text-decoration: none;
         transition: background-color 0.3s, color 0.3s;
@@ -48,23 +48,19 @@
     color: olive;
     }
 
-    .heart-pass {
-        font-size: 40vw; 
-        position: absolute;
+    .ram {
+        width: 30vh; height: 50vh; position: absolute;
     }
 
-    .ram {
-        width: 30vw; height: auto; position: absolute;
+    .hint {
+        font-size: 3vh; font-family: inherit; position: absolute; top: 0; text-align: center;
     }
 </style>
 
 <div class="gate-view">
-    <img src="assets/images/frame.png" alt="ram" class="ram">
-    <form action="/index.php" method="post" style="text-align: center; position: relative;">
-        <p style="font-size: 1vw; font-family: inherit;">
-            Heslo je text hneď nad dátumom svadby <br> na pozvánke (spolu bez medzier)
-        </p>
-        <input type="password" name="pass"><br>
+    <img src="../assets/images/frame.png" alt="ram" class="ram">
+    <form action="/m/index.php" method="post" style="text-align: center; position: relative;">
+        <input type="text" name="pass"><br>
         <button type="submit" class="submit-button">Potvrdiť</button>
     </form>
 </div>

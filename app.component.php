@@ -1,6 +1,7 @@
 
 <style type="text/css">
     <?php
+        include("globals.css");
         include("app.component.css");
     ?>
 </style>
@@ -9,9 +10,10 @@
     <img src="assets/images/flower.png" alt="Flower" class="flower-app top-right-app">
 </div>
 <!-- <router-outlet> -->
-<?php include("router/router.php") ?>
+<?php
+    include("router/router.php")
+?>
 <!-- </router-outlet> -->
 <?php
     include("names-header/names-header.component.php");
 ?>
-

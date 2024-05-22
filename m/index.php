@@ -12,6 +12,8 @@
     header('Location: /');
     exit;
   }
+
+  $isHome = $_SERVER["REQUEST_URI"] == "/m/home" ? true : false;
 ?>
 
 <?php
@@ -60,91 +62,26 @@ function checkCookie($pass) {
     }
   }
 }
+
+include("../access/access.php");
+
 ?>
 
-<?php if (!isset($_COOKIE['cake'])) : ?>
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Gate</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="heart.ico">
-  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  <?php
-    include("gate/gate.php");
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><?php if($access) { echo "Stakčínska svadbička"; } else { echo "Ahoj"; } ?></title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="heart.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body <?php if($access && $isHome) { echo ' onload="hideUploadInfo()" '; } if($access) { echo ' onclick="hideMenu()" '; } ?> >
+  <?php 
+    if ($access) { include("app.component.php"); } 
+    else { include("pages/gate/gate.php"); }
   ?>
-</body>
-</html>
-
-<?php endif; ?>
-
-<?php if (isset($_POST['pass'])) : ?>
-<?php if (checkPost($_POST['pass'])) : ?>
-
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Stakčínska svadbička</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="heart.ico">
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body onclick="hideMenu()" onload="hideUploadInfo()">
-    <?php
-      include("app.component.php");
-    ?>
   </body>
-  </html>
 
-<?php endif; ?>
-<?php endif; ?>
-<?php if (isset($_COOKIE['cake'])) : ?>
-<?php if (checkCookie($_COOKIE['cake'])) : ?>
-
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Stakčínska svadbička</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="heart.ico">
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body onclick="hideMenu()" onload="hideUploadInfo()">
-    <?php
-      include("app.component.php");
-    ?>
-  </body>
   </html>
-
-<?php else : ?>
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Gate</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="heart.ico">
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <?php
-      include("gate/gate.php");
-    ?>
-  </body>
-  </html>
-<?php endif; ?>
-<?php endif; ?>

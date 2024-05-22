@@ -6,7 +6,7 @@
         left: 0; 
         width: 100%; 
         height: 100%;
-        border: 1vh solid olive; 
+        border: 1vw solid olive; 
         box-sizing: border-box;
         background-color: whitesmoke;
         display: flex;
@@ -14,12 +14,12 @@
         align-items: center;
     }
     input[type=password] {
-        width: 20vh;
+        width: 15vw;
         height: auto;
-        font-size: 3vh;
-        border-radius: 1vh;
+        font-size: 2vw;
+        border-radius: 1vw;
         padding: 0.5vh 1vw;
-        font-family: 'Lobster';
+        font-family: var(--fontFamily);
         -webkit-text-stroke-width: 0.5px;
         -webkit-text-stroke-color: black;
         text-align: center;
@@ -30,10 +30,10 @@
         border-style: solid;
         color: white;
         cursor: pointer;
-        font-family: 'Lobster';
-        font-size: 4vh;
+        font-family: var(--fontFamily);
+        font-size: 2.5vw;
         height: auto;
-        padding: 1vh;
+        padding: 1vw;
         text-align: center;
         text-decoration: none;
         transition: background-color 0.3s, color 0.3s;
@@ -48,21 +48,19 @@
     color: olive;
     }
 
-    .ram {
-        width: 30vh; height: 50vh; position: absolute;
+    .heart-pass {
+        font-size: 40vw; 
+        position: absolute;
     }
 
-    .hint {
-        font-size: 3vh; font-family: inherit; position: absolute; top: 0; text-align: center;
+    .ram {
+        width: 30vw; height: auto; position: absolute;
     }
 </style>
 
 <div class="gate-view">
-        <p class="hint">
-            Heslo je text <br> hneď nad dátumom svadby <br> na pozvánke (spolu bez medzier)
-        </p>
-    <img src="../assets/images/frame.png" alt="ram" class="ram">
-    <form action="/m/index.php" method="post" style="text-align: center; position: relative;">
+    <img src="assets/images/frame.png" alt="ram" class="ram">
+    <form action="/index.php" method="post" style="text-align: center; position: relative;">
         <input type="password" name="pass"><br>
         <button type="submit" class="submit-button">Potvrdiť</button>
     </form>

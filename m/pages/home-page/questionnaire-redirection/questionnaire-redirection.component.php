@@ -13,11 +13,11 @@
         </p>
     </div>
     <div class="person" style="display: flex;">
-        <form action="/m/mitko" method="post" style="display: flex;">
-            <input type="hidden" name="personName" value="mitko">
+        <form action="/m/woody" method="post" style="display: flex;">
+            <input type="hidden" name="personName" value="woody">
             <button type="submit" class="hidden-button"></button>
         </form>
-        <img src="../assets/images/mitko.png" alt="Mitko" style="width: inherit;">
+        <img src="../assets/images/woody.png" alt="woody" style="width: inherit;">
     </div>
 </div>
 
@@ -29,10 +29,10 @@
         </p>
     </div>
     <div class="person" style="display: flex;">
-        <form action="/m/domka" method="post" style="display: flex;">
-            <input type="hidden" name="personName" value="domka">
+        <form action="/m/jessie" method="post" style="display: flex;">
+            <input type="hidden" name="personName" value="jessie">
             <button type="submit" class="hidden-button"></button>
         </form>
-        <img src="../assets/images/domka.png" alt="Domka" style="width: inherit;">
+        <img src="../assets/images/jessie.png" alt="jessie" style="width: inherit;">
     </div>
 </div>
