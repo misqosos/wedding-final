@@ -28,17 +28,30 @@
   height: auto;
 }
 
-.person {
+.person-man {
   width: 14vh;
   height: auto;
   transition: width 0.5s;
 
-  animation-name: person-zoom;
+  animation-name: person-man-zoom;
   animation-duration: 2s;
 }
 
-.person:hover {
+.person-woman {
+  width: 11vh;
+  height: auto;
+  transition: width 0.5s;
+
+  animation-name: person-woman-zoom;
+  animation-duration: 2s;
+}
+
+.person-man:hover {
   width: 16vh;
+}
+
+.person-woman:hover {
+  width: 13vh;
 }
 
 .collection-wrapper:hover .oblacik {
@@ -78,7 +91,12 @@
   100% { visibility: hidden; }
 }
 
-@keyframes person-zoom {
+@keyframes person-man-zoom {
   50% { width: 16vh; }
   100% { width: 14vh; }
+}
+
+@keyframes person-woman-zoom {
+  50% { width: 13vh; }
+  100% { width: 11vh; }
 }

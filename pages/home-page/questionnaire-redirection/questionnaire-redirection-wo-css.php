@@ -6,7 +6,7 @@
             Ahoj,<br>Čo o mne vieš?
         </p>
     </div>
-    <div class="person" style="display: flex;">
+    <div class="person-man" style="display: flex;">
         <form action="<?php echo $actionPathMan ?>" method="post" style="display: flex;">
             <input type="hidden" name="personName" value="<?php echo $GLOBALS["man"] ?>">
             <button type="submit" class="hidden-button"></button>
@@ -22,7 +22,7 @@
             Ahoj,<br>Čo o mne vieš?
         </p>
     </div>
-    <div class="person" style="display: flex;">
+    <div class="person-woman" style="display: flex;">
         <form action="<?php echo $actionPathWoman ?>" method="post" style="display: flex;">
             <input type="hidden" name="personName" value="<?php echo $GLOBALS["woman"] ?>">
             <button type="submit" class="hidden-button"></button>
