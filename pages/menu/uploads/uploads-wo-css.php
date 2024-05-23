@@ -66,14 +66,14 @@
             videoLoad = setInterval(() => {
                 for (let index = 0; index < videos.length; index++) {
                     const video = videos[index];
-                    readyStates.set(video, video.readyState);
+                    readyStates.set(video.id, video.readyState);
                     allVideosReady = readyStates.values().every(state => state == 4);
 
                     if (!allVideosReady) {
                         video.load();
                     } else {
                         clearInterval(videoLoad);
-                        console.log("all ready", readyStates.values());
+                        console.log("all ready", readyStates);
                         break; 
                     }
                 }
