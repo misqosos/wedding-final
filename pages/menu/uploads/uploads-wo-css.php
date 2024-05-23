@@ -63,12 +63,8 @@
             var readyStates = new Map();
             var allVideosReady = false;
 
-            // for (let index = 0; index < videos.length; index++) {
-            //     readyStates.set(videos[index], videos[index].readyState);
-            // }
-
             [...videos].map(video => readyStates.set(video, video.readyState));
-            
+
             videoLoad = setInterval(() => {
                 for (let index = 0; index < videos.length; index++) {
                     const video = videos[index];
@@ -77,10 +73,9 @@
 
                     if (!allVideosReady) {
                         video.load();
-                        console.log("not ready", readyStates);
                     } else {
                         clearInterval(videoLoad);
-                        console.log("all ready", readyStates);
+                        console.log("all videos ready");
                         break; 
                     }
                 }
