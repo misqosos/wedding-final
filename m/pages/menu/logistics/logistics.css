@@ -21,6 +21,7 @@
 }
 
 .info-text {
+    font-weight: bolder;
     position: relative;
     margin-top: 5vh;
     font-size: 4vh;

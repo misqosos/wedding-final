@@ -7,6 +7,7 @@
 	}
 	.score-wrapper {
 		text-align: center;
+		font-weight: bolder;
 		margin-bottom: 5vw;
 	}
     .start-button {
@@ -14,11 +15,12 @@
         font-size: 6vw;
         color: var(--invitationHeaderColor);
         position: absolute;
-        background: var(--backgroundColor);
+		border: none;
+		background: none;
         cursor: pointer;
     }
     .start-button:hover {
-        background: var(--startButtonHoverColor);
+        text-shadow: 2px 2px gray;
     }
     .move-info {
         font-size: 6vw;

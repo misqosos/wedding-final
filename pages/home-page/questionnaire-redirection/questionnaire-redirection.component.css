@@ -29,7 +29,7 @@
 }
 
 .person-man {
-  width: 12vw;
+  width: 13vw;
   height: auto;
   transition: width 0.5s;
 
@@ -38,7 +38,7 @@
 }
 
 .person-woman {
-  width: 10vw;
+  width: 11vw;
   height: auto;
   transition: width 0.5s;
 
@@ -47,11 +47,11 @@
 }
 
 .person-man:hover {
-  width: 14vw;
+  width: 15vw;
 }
 
 .person-woman:hover {
-  width: 12vw;
+  width: 13vw;
 }
 
 .collection-wrapper:hover .oblacik {
@@ -92,11 +92,11 @@
 }
 
 @keyframes person-man-zoom {
-  50% { width: 14vw; }
-  100% { width: 12vw; }
+  50% { width: 15vw; }
+  100% { width: 13vw; }
 }
 
 @keyframes person-woman-zoom {
-  50% { width: 12vw; }
-  100% { width: 10vw; }
+  50% { width: 13vw; }
+  100% { width: 11vw; }
 }

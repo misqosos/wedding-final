@@ -22,6 +22,7 @@
 .story-text {
     position: relative;
     margin-top: 5vw;
+    font-weight: bolder;
     font-size: 2vw;
     font-family: var(--fontFamily);
     line-height: 3vw;

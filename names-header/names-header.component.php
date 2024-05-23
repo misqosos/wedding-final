@@ -6,6 +6,7 @@
 </style>
 
 <div class="title-names-header" id="slide-names-header">
+    <div class="background-picture"></div>
     <?php
         $homePath = "/";
         $ourStoryPath = "/nas-pribeh";

@@ -21,6 +21,7 @@
 
 .story-text {
     position: relative;
+    font-weight: bolder;
     margin-top: 5vh;
     font-size: 4vh;
     font-family: var(--fontFamily);

@@ -105,10 +105,10 @@ input[type=number] {
 }
 
 .submit-button {
-  background-color: #1abc5d;
+  background-color: #ffffff;
   border-radius: 1.5vw;
   border-style: solid;
-  color: #F082AC;
+  color: #000000;
   cursor: pointer;
   font-family: var(--fontFamily);
   font-size: 2.5vw;
@@ -123,8 +123,8 @@ input[type=number] {
 
 .submit-button:hover,
 .submit-button:focus {
-  background-color: #F082AC;
-  color: #1abc5d;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .picture {

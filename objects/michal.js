@@ -1,6 +1,6 @@
 
 person = {
-    dbRowDistinction : 'michal',
+    dbRowDistinction : 'mitko',
     variables : {
       arrays : ['hobbies'],
       booleans : ['hasSeenParentsFirst', 'isAllCorrect'],

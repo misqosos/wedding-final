@@ -5,6 +5,7 @@
     ?>
 </style>
 <div class="title-names-header" id="slide-names-header" onclick="showMenu()">
+    <div class="background-picture"></div>
     <?php
         $homePath = "/m";
         $ourStoryPath = "/m/nas-pribeh";
