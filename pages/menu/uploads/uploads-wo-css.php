@@ -63,9 +63,7 @@
             var readyStates = new Map();
             var allVideosReady = false;
 
-            for (let index = 0; index < videos.length; index++) {
-                readyStates.set(videos[index], videos[index].readyState);
-            }
+            Array(videos).map(video => readyStates.set(video, video.readyState));
 
             videoLoad = setInterval(() => {
                 for (let index = 0; index < videos.length; index++) {
