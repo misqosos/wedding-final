@@ -75,6 +75,7 @@
 
                     if (!allVideosReady) {
                         video.load();
+                        console.log("not ready", readyStates);
                     } else {
                         clearInterval(videoLoad);
                         console.log("all ready", readyStates);
