@@ -61,19 +61,23 @@
         function isVideoReady(){
             var videos = document.getElementsByTagName("video");
             var readyStates = new Map();
+            var allVideosReady = false;
 
             setInterval(() => {
                 for (let index = 0; index < videos.length; index++) {
                     const video = videos[index];
                     readyStates.set(video, video.readyState);
-                    if (video.readyState != 4) {
-                        video.load();
-                    }
+                    allVideosReady = readyStates.values().every(state => state == 4);
 
-                    console.log("readiness", readyStates.values().every(state => state == 4))
+                    if (!allVideosReady) {
+                        video.load();
+                        continue;
+                    }
+                    clearInterval();
                 }
             }, 5000); 
         }
+        
         function openImage(imgs) {
             document.getElementById("slide-names-header").style.display = 'none';
             if (document.getElementById("home-button")) {
