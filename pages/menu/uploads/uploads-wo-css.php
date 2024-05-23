@@ -57,6 +57,19 @@
     </div>
 
     <script>
+        isVideoReady();
+        function isVideoReady(){
+            var videos = document.getElementsByTagName("video");
+
+            setInterval(() => {
+                for (let index = 0; index < videos.length; index++) {
+                    const video = videos[index];
+                    if (video.readyState != 4) {
+                        video.load();
+                    }
+                }
+            }, 5000);
+        }
         function openImage(imgs) {
             document.getElementById("slide-names-header").style.display = 'none';
             if (document.getElementById("home-button")) {
