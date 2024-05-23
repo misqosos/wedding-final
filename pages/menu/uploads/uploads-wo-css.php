@@ -57,6 +57,28 @@
     </div>
 
     <script>
+        isVideoReady();
+        function isVideoReady(){
+            var videos = document.getElementsByTagName("video");
+            console.log(videos);
+
+            for (let index = 0; index < videos.length; index++) {
+                const element = videos[index];
+                element.addEventListener('error', function (e) {
+
+                var date = new Date();
+                var milliSecs = date.getMilliseconds();
+                var curr_src = $(element).attr('src');
+                var curr_src_arr = curr_src.split("?");
+                var new_src = curr_src_arr+"?t="+milliSecs;
+
+                $(element).attr('src',new_src);
+                $(element).find('source').attr('src',new_src);
+                element.load();
+                }, false);
+                
+            }
+        }
         function openImage(imgs) {
             document.getElementById("slide-names-header").style.display = 'none';
             if (document.getElementById("home-button")) {
