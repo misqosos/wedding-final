@@ -60,15 +60,19 @@
         isVideoReady();
         function isVideoReady(){
             var videos = document.getElementsByTagName("video");
+            var readyStates = new Map();
 
             setInterval(() => {
                 for (let index = 0; index < videos.length; index++) {
                     const video = videos[index];
+                    readyStates.set(video, video.readyState);
                     if (video.readyState != 4) {
                         video.load();
                     }
+
+                    console.log("readiness", readyStates.values().every(state => state == 4))
                 }
-            }, 5000);
+            }, 5000); 
         }
         function openImage(imgs) {
             document.getElementById("slide-names-header").style.display = 'none';
