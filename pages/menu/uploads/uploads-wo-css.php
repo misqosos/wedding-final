@@ -73,11 +73,12 @@
                         video.load();
                         continue;
                     }
+                    console.log("all videos ready");
                     clearInterval();
                 }
             }, 5000); 
         }
-        
+
         function openImage(imgs) {
             document.getElementById("slide-names-header").style.display = 'none';
             if (document.getElementById("home-button")) {
