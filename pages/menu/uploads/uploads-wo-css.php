@@ -71,10 +71,10 @@
 
                     if (!allVideosReady) {
                         video.load();
-                        continue;
+                    } else {
+                        console.log("all videos ready");
+                        clearInterval(this);
                     }
-                    console.log("all videos ready");
-                    clearInterval(this);
                 }
             }, 5000); 
         }
