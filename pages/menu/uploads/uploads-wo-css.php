@@ -73,7 +73,7 @@
                         video.load();
                     } else {
                         clearInterval(videoLoad);
-                        console.log("all ready");
+                        console.log("all ready", readyStates.values());
                         break; 
                     }
                 }
