@@ -74,6 +74,7 @@
                     } else {
                         clearInterval(videoLoad);
                         console.log("all ready");
+                        break; 
                     }
                 }
             }, 5000); 
