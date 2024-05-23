@@ -74,7 +74,7 @@
                         continue;
                     }
                     console.log("all videos ready");
-                    clearInterval();
+                    clearInterval(this);
                 }
             }, 5000); 
         }
