@@ -23,7 +23,7 @@
         function iterateImages ($image) {
             $videoExts = array("mov", "mp4", "avi", "wmv", "avchd", "webm", "flv", "3gp");
             if( in_array(strtolower(pathinfo($image, PATHINFO_EXTENSION)), $videoExts) ) {
-                echo '<video controls> <source src="'.$image.'" type="video/mp4"> </video>';
+                echo '<video id="gallery-video" controls> <source src="'.$image.'" type="video/mp4"> </video>';
             } else {
                 echo '<img src="'.$image.'" alt="photo" onclick="openImage(this);">';
             }
@@ -57,6 +57,17 @@
     </div>
 
     <script>
+        isVideoReady();
+        function isVideoReady(){
+            var videos = document.getElementsByTagName("video");
+
+            videos.forEach(element => {
+                while ( element.readyState !== 4 ) {
+                    location.reload();
+                }
+            });
+        }
+
         function openImage(imgs) {
             document.getElementById("slide-names-header").style.display = 'none';
             if (document.getElementById("home-button")) {
