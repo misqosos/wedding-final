@@ -53,3 +53,7 @@ color: olive;
 .ram {
     width: 30vw; height: auto; position: absolute;
 }
+
+.hint {
+    font-size: 3vw;
+}
