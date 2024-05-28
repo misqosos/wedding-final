@@ -49,7 +49,3 @@ color: olive;
 .ram {
     width: 30vh; height: 50vh; position: absolute;
 }
-
-.hint {
-    font-size: 3vh;
-}

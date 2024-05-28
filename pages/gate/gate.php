@@ -8,7 +8,7 @@
 <div class="gate-view">
     <img src="assets/images/frame.png" alt="ram" class="ram">
     <form action="<?php echo $_SERVER['REQUEST_URI'] ?>" method="post" style="text-align: center; position: relative;">
-        <p class="hint">Heslo je text hneď nad dátumom svadby, bez medzier</p>
+        <p>Heslo je text <br>na pozvánke hneď nad <br> dátumom svadby, bez medzier.</p>
         <input type="password" name="pass"><br>
         <?php if(!$access && isset($_POST["pass"])) : ?>
             <label style="color: red;"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>&nbsp;Nesprávne heslo, skúste znova</label><br>
