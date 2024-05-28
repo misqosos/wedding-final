@@ -11,12 +11,11 @@
         font-size: 6vw;
         color: var(--invitationHeaderColor);
         position: absolute;
-		border: none;
-		background: none;
+        background: var(--backgroundColor);
         cursor: pointer;
     }
     .start-button:hover {
-        text-shadow: 2px 2px gray;
+        background: var(--startButtonHoverColor);
     }
     .winner-info {
         font-size: 4vw;

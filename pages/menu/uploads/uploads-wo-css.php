@@ -60,7 +60,7 @@
         <?php if(!isMobileDevice()) : ?>
             isVideoReady();
         <?php endif; ?>
-        
+
         function isVideoReady(){
             var videos = document.getElementsByTagName("video");
             var readyStates = new Map();
@@ -84,7 +84,7 @@
                 }
             }, 5000); 
         }
-         
+        
         function openImage(imgs) {
             document.getElementById("slide-names-header").style.display = 'none';
             if (document.getElementById("home-button")) {

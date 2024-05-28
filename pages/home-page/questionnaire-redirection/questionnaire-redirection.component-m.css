@@ -67,6 +67,24 @@
   border: none;
 }
 
+/* .quiz-label-left {
+  position: absolute;
+  right: -15vw;
+  bottom: 5vh;
+  font-family: var(--fontFamily);
+  font-size: 2vh;
+  font-weight: bolder;
+}
+
+.quiz-label-right {
+  position: absolute;
+  left: -15vw;
+  bottom: 5vh;
+  font-family: var(--fontFamily);
+  font-size: 3vh;
+  font-weight: bolder;
+} */
+
 .left-side {
   transform: scaleX(-1);
   right: -19.5vw;

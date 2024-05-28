@@ -1,6 +1,7 @@
 <?php
   $GLOBALS["man"] = "michal";
   $GLOBALS["woman"] = "domka";
+  $GLOBALS["mobile"] = "";
   include("backend/database.class.php");
 ?>
 <?php
@@ -11,11 +12,8 @@
   } 
 
   if(isMobileDevice()){
-    header('Location: /m/');
-    exit;
+    $GLOBALS["mobile"] = "-m";
   }
-
-  $isHome = $_SERVER["REQUEST_URI"] == "/home" ? true : false;
 ?>
 
 <?php
@@ -37,7 +35,6 @@ function checkPost($pass) {
     if ($result) {
       if ($pass == $result->lunch) {
         setcookie('cake', $result->id, time() + (86400 * 30), "/"); // 86400 = 1 day
-        header('Location: /');
         return true;
       }
     }
@@ -74,13 +71,13 @@ include("access/access.php");
   <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><?php if($access) { echo "Stakčínska svadbička"; } else { echo "Login"; } ?></title>
+    <title><?php if($access) { echo "Stakčínska svadbička"; } else { echo "Davaj heslo"; } ?></title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="heart.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
+  <body <?php if(isMobileDevice() && $access) { echo 'onclick="hideMenu()"'; } ?>>
   <?php 
     if ($access) { include("app.component.php"); } 
     else { include("pages/gate/gate.php"); }

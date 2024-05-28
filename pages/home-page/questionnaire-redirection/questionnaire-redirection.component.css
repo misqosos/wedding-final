@@ -28,6 +28,19 @@
   height: auto;
 }
 
+.person {
+  width: 12vw;
+  height: auto;
+  transition: width 0.5s;
+
+  animation-name: person-zoom;
+  animation-duration: 2s;
+}
+
+.person:hover {
+  width: 14vw;
+}
+
 .person-man {
   width: 13vw;
   height: auto;
@@ -67,6 +80,24 @@
   border: none;
 }
 
+/* .quiz-label-left {
+  position: absolute;
+  right: -6vw;
+  bottom: 10vw;
+  font-family: var(--fontFamily);
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.quiz-label-right {
+  position: absolute;
+  left: -6vw;
+  bottom: 10vw;
+  font-family: var(--fontFamily);
+  font-size: 2vw;
+  font-weight: bolder;
+} */
+
 .left-side {
   transform: scaleX(-1);
   right: -11.5vw;
@@ -89,6 +120,11 @@
 @keyframes oblacik-show {
   50% { visibility: visible; }
   100% { visibility: hidden; }
+}
+
+@keyframes person-zoom {
+  50% { width: 14vw; }
+  100% { width: 12vw; }
 }
 
 @keyframes person-man-zoom {

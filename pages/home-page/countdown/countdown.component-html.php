@@ -17,5 +17,15 @@
       <p id="minutesLeftDescription"></p>
       <p id="secondsLeftDescription"></p>
     </div>
+    <?php if(isMobileDevice()) : ?>
+      <div class="icon">
+        <a href="https://toystory.disney.com/" target="_blank" style="all: inherit;">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </a>
+      </div>
+    <?php endif; ?>
+  </div>
+  <div class="quiz-label">
+    &larr;&nbsp;&nbsp;Kvízy&nbsp;&nbsp;&rarr;
   </div>
 </div>
