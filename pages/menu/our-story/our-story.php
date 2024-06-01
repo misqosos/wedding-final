@@ -5,5 +5,4 @@
 
 <?php 
     include("our-story-wo-css.php");
-    include("components/home-button.html"); 
 ?>

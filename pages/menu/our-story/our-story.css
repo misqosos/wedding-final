@@ -1,7 +1,6 @@
 .main-view {
     width: 100%; 
     height: 100%;
-    margin-top: 7vw;
     top: 0; 
     left: 0; 
     position: fixed; 
@@ -11,37 +10,68 @@
 }
 
 .main-title {
+    margin-top: 7vw;
     position: relative;
     font-size: 5vw;
-    color: var(--invitationHeaderColor);
+    color: white;
     font-family: var(--fontFamily);
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
 }
 
-.story-text {
+.photo-line {
     position: relative;
-    margin-top: 5vw;
-    font-size: 2vw;
-    font-family: var(--fontFamily);
-    line-height: 3vw;
-    margin-left: 17vw;
-    margin-right: 17vw;
+    box-sizing: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.image-together {
+.between-text {
+    position: relative;
+    font-family: var(--fontFamily);
+    font-size: 5vw; 
+    color: white;
+}
+
+.image-bigger {
+    width: 25vw;
+    height: auto;
+    position: relative;
+}
+
+.image-smaller {
     width: 15vw;
     height: auto;
-    position: absolute;
-    border-radius: 2vw;
-    box-shadow: 5px 5px 5px 5px;
-    opacity: 0.5;
+    position: relative;
 }
 
-.image-left {
-    top: 20vw; left: 20vw; rotate: -10deg;
+.dots {
+    font-size: 10vw;
+    word-spacing: 3vw;
+    color: white;
 }
 
-.image-right {
-    top: 2vw; right: 20vw; rotate: 10deg;
+.ramik {
+    background-image: url("assets/images/spolu/ramik.png");
+    background-size: 100% auto;
+    width: 25vw;
+    height: 28vw;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+.image-ramik {
+    position: relative;
+    top: 5vw;
+    left: 3.5vw;
+    width: 18vw;
+    height: 16vw;
+    overflow: hidden;
+}
+
+.text-under-photo {
+    position: relative;
+    top: 6vw;
+    font-family: var(--fontFamily);
+    font-size: 2vw;
 }

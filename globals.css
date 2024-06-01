@@ -2,7 +2,7 @@
 :root {
     
     --borderColor: #000000;
-    --backgroundColor: rgb(255, 253, 147);
+    --backgroundColor: rgb(255, 255, 255);
     --invitationHeaderColor: rgb(0, 0, 0);
     --startButtonHoverColor: rgb(255, 253, 100);
     --detailsOrHomeHoverColor: rgb(36, 184, 17);

@@ -1,6 +1,6 @@
 
 .title-names-header {
-    position: absolute;
+    position: fixed;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
     background-color: var(--backgroundColor);

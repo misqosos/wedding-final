@@ -75,12 +75,22 @@
     font: normal 8vw var(--fontFamily);
   }
 
-  .quiz-label {
-    position: relative; 
+  .quiz-label-left {
+    position: absolute; 
     z-index: 1;
     font-weight: bolder;
     font-size: 3vw;
-    margin-bottom: 1vh;
+    bottom: 0;
+    left: -12vw;
+  }
+
+  .quiz-label-right {
+    position: absolute; 
+    z-index: 1;
+    font-weight: bolder;
+    font-size: 3vw;
+    bottom: 0;
+    right: -12vw;
   }
   
   @media screen and (max-width: 8vw) {
