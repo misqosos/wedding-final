@@ -75,3 +75,9 @@
   top: 1.6vh;
   right: 1.2vh;
 }
+
+.oznam {
+  position: absolute;
+  bottom: -2vh;
+  color: white;
+}
