@@ -5,7 +5,7 @@
     <p class="info-text">
         Doprava je zabezpečená autobusom z Nižnej Myšle. Zastavíme sa po vás aj vo Vyšnej Myšli.
         <br>
-        Odchod je o 12:50
+        Odchod je o 12:30
         <br>
         <i class="fa fa-bus" aria-hidden="true"></i>
         <br>Tešime sa.
