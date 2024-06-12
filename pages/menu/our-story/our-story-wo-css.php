@@ -15,7 +15,7 @@
     </div>
     
     <div class="between-text">
-        Od prvŕeho rande, cez dlhé rozhovory v parku až pred oltár.
+        Od prvého rande, cez dlhé rozhovory v parku až pred oltár.
     </div>
     
     <div class="photo-line">
