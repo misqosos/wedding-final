@@ -16,8 +16,6 @@
     color: white;
     font-size: 5vw;
     font-family: var(--fontFamily);
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
 }
 
 .info-text {
