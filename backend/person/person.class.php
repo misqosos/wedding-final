@@ -79,7 +79,7 @@
             $this->dob =  $person->dob[2] == '' || $person->dob[1] == '' || $person->dob[0] == '' ? "0000-00-00" : $person->dob[0]."-".$person->dob[1]."-".$person->dob[2];;
             $this->email =  $person->email;
             $this->age =  $person->age;
-            $this->hobbies =  $person->hobbies;
+            $this->hobbies =  json_encode($person->hobbies);
             $this->hairColor =  $person->hairColor;
             $this->height =  $person->height;
             $this->favColor =  $person->favColor;
