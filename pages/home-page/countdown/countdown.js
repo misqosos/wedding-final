@@ -1,6 +1,6 @@
 
 
-weddingDate = new Date('2024-08-02T09:20:00');
+weddingDate = new Date('2024-08-17T15:00:00');
 document.getElementById('weddingDate').innerHTML += this.formatDate(this.weddingDate);
 now = new Date();
 
