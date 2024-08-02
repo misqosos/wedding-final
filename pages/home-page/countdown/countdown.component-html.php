@@ -1,8 +1,11 @@
 
 <div class="count-down-timer" id="slide-countdown">
   <div class="background-picture"></div>
+  <div class="start" id="start">
+    Užívajte svadbu
+  </div>
   <p id="weddingDate">Lásku si sľúbime <?php if(isMobileDevice()) : ?><br><?php endif; ?></p>
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
     <div class="times">
       <p id="monthsLeft"></p>
       <p id="daysLeft"></p>

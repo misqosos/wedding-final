@@ -120,6 +120,13 @@
   margin-bottom: 1vh;
 }
 
+.start {
+  position: relative;
+  font-size: 10vh;
+  z-index: 1;
+  display: none;
+}
+
 #slide-countdown {
   bottom: -35vh;
   -webkit-animation: slide-countdown 5s forwards;
