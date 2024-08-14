@@ -10,8 +10,8 @@
         
         <div class="add-button">
             <i class="fa fa-camera-retro" aria-hidden="true"><div class="add-photo-label">Pridať fotky</div></i>
-            <!-- <div class="oznam">(Pridávanie fotiek spustíme až na svadbe)</div> -->
-            <input type="file" name="filesToUpload[]" id="filesToUpload" multiple="multiple" class="hidden-add-button" onchange="checkFiles()">
+            <div class="oznam">(Pridávanie fotiek spustíme až na svadbe)</div>
+            <!-- <input type="file" name="filesToUpload[]" id="filesToUpload" multiple="multiple" class="hidden-add-button" onchange="checkFiles()"> -->
         </div>
 
         <div id="uploadButtonWrapper" style="display: none;">
